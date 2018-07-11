@@ -1,18 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context="cn.aizhangzhang.aizhangzhang.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal">
 
-</android.support.constraint.ConstraintLayout>
+        <RadioButton
+            android:id="@+id/rb_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/radio_home"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="首页"
+            android:textColor="@color/primary_text"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_near"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_coordinates"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="附近"
+            android:textColor="@color/primary_text"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_message"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="消息"
+            android:textColor="@color/primary_text"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/rb_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_live"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="LIVE"
+            android:textColor="@color/primary_text"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radio_mine"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="我的"
+            android:textColor="@color/primary_text"
+            android:textSize="12sp" />
+
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/fg_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_main">
+
+        <Button
+            android:id="@+id/force_offline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send force offline broadcast" />
+
+    </RelativeLayout>
+</RelativeLayout>

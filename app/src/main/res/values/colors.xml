@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+
+
+        <color name="bottom_color_normal">#616161</color>
+        <color name="bottom_color_press">#D32F2F</color>
+
+<color name="colorPrimary">#03A9F4</color>
+<color name="colorPrimaryDark">#0288d1</color>
+    <color name="colorAccent">#8BC34A</color>
+    <color name="primary_light">#B3E5FC</color>
+<color name="primary_text">#212121</color>
+<color name="secondary_text">#757575</color>
+<!--<color name="icons">#FFFFFF</color>-->
+<color name="divider">#BDBDBD</color>
+
+
+<color name="lighter_gray">#ddd</color>
+<color name="darker_gray">#aaa</color>
+
+<color name="layout_back">#d2e9ff</color>
+
+
+<color name="red_normal">#FF0000</color>
+<color name="red_pressed">#FF6666</color>
+<color name="green_normal">#37C000</color>
+<color name="green_pressed">#30A070</color>
+<color name="purple_normal">#9932CC</color>
+<color name="purple_pressed">#9F79EE</color>
+<color name="gray_normal">#eeeeee</color>
+<color name="gray_pressed">#b2b2b2</color>
+
+<!-- Olympic Rings start-->
+
+<color name="Olympic_Rings_red">#DC2F1F</color>
+<color name="Olympic_Rings_yellow">#EFA90D</color>
+<color name="Olympic_Rings_blue">#006bb0</color>
+<color name="Olympic_Rings_black">#1D1815</color>
+<color name="Olympic_Rings_green">#059341</color>
+<!-- Olympic Rings end-->
 </resources>
