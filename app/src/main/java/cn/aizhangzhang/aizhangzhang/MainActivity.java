@@ -2,6 +2,7 @@ package cn.aizhangzhang.aizhangzhang;
 import cn.aizhangzhang.aizhangzhang.Base.BaseActivity;
 import cn.aizhangzhang.aizhangzhang.Base.BaseFragment;
 import cn.aizhangzhang.aizhangzhang.Fragment.HomepageFragment;
+import cn.aizhangzhang.aizhangzhang.Fragment.LiveFragment;
 import cn.aizhangzhang.aizhangzhang.Fragment.MessageFragment;
 import cn.aizhangzhang.aizhangzhang.Fragment.MineFragment;
 import cn.aizhangzhang.aizhangzhang.Fragment.NearbyFragment;
@@ -68,10 +69,11 @@ public class MainActivity extends BaseActivity {
     protected void initViews() {
         //将Fragment加入数组
         mFragments = new Fragment[] {
-                //主页、新闻、图片、视频、个人
+                //首页、附近、消息、LIVE、个人
                 new HomepageFragment(),
                 new NearbyFragment(),
                 new MessageFragment(),
+                new LiveFragment(),
                 new MineFragment()
 
         };
@@ -84,19 +86,19 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
                 switch (checkedId) {
-                    case R.id.rg_main:
+                    case R.id.rb_homepage:
                         setIndexSelected(0);
                         break;
-                    case R.id.rb_homepage:
+                    case R.id.rb_near:
                         setIndexSelected(1);
                         break;
-                    case R.id.rb_near:
+                    case R.id.rb_message:
                         setIndexSelected(2);
                         break;
-                    case R.id.rb_mine:
+                    case R.id.rb_live:
                         setIndexSelected(3);
                         break;
-                    case R.id.rb_live:
+                    case R.id.rb_mine:
                         setIndexSelected(4);
                         break;
                 }

@@ -7,7 +7,7 @@ public class HomepageFragment extends BaseFragment {
 
     @Override
     protected int attachLayoutRes() {
-        return R.layout.fragment_live;
+        return R.layout.fragment_homepage;
     }
 
     @Override
