@@ -1,24 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#00f"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#00f">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="图片消息"
-        android:textSize="15sp"
-        android:gravity="bottom"
-        android:paddingLeft="10dp"
-        android:paddingBottom="5dp"
-        android:textColor="#fff"
         android:background="@color/bottom_color_press"
-        />
-    <TextView
-        android:textSize="20sp"
-        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text="图片消息"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/deleteAll_btn"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="图片消息"/>
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:text="删除所有数据" />
+
+    <Button
+        android:id="@+id/insert_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deleteAll_btn"
+        android:text="添加10条数据" />
+
+    <cn.aizhangzhang.aizhangzhang.RecyclerViewWithEmptyView
+        android:id="@+id/emptyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/insert_btn">
+
+    </cn.aizhangzhang.aizhangzhang.RecyclerViewWithEmptyView>
+    <!--Empty提示图-->
+    <ImageView
+        android:id="@+id/empty_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/no_data" />
+
+</RelativeLayout>
