@@ -1,5 +1,6 @@
 package cn.aizhangzhang.aizhangzhang.Fragment;
 
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 
@@ -17,6 +18,8 @@ public class MessageFragment extends BaseFragment {
     private MyRecycleViewAdapter mAdapter;
     private View mEmptyView;
     private List<ItemData> mList; //数据源
+
+    private SwipeRefreshLayout swipeRefresh;
 
     @Override
     protected int attachLayoutRes() {
@@ -53,7 +56,7 @@ public class MessageFragment extends BaseFragment {
         initRv();
 
 
-
+        srl_init();
     }
 
     //插入数据
@@ -69,5 +72,22 @@ public class MessageFragment extends BaseFragment {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setEmptyView(mEmptyView); //设置空布局
+    }
+
+
+    /**
+     * SwipeRefreshLayout 初始化
+     */
+    private void srl_init() {
+        swipeRefresh =(SwipeRefreshLayout) findViewById(R.id.sr_live_list);
+        swipeRefresh.setColorSchemeResources(R.color.colorPrimary);
+
+        swipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+            }
+
+        });
     }
 }
