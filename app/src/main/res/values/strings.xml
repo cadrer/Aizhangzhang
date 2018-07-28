@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Aizhangzhang</string>
+
+    <string name="uebwxkhc">设备型号</string>
+    <string name="uebwuull">数量(台)</string>
+    <string name="uebwdjjx">单价(元)</string>
+    <string name="uebwzsjx">总价(元)</string>
+    <string name="jnhoriqi">交货日期</string>
+    <string name="fadmjizu">发电机型号</string>
+    <string name="cczofhui">操作方式</string>
+    <string name="yeyagvge">液压缸规格</string>
+    <string name="dmqijmpbpd">电器件品牌</string>
+    <string name="uvxlrsji">水箱规格</string>
+    <string name="pftuyjse">喷涂颜色</string>
+    <string name="anvlfhui">安装方式</string>
+    <string name="uhxxfuyhfhui">俯仰方式(eg:液压)</string>
+    <string name="uhxxfuyhjndu">俯仰角度</string>
+    <string name="zoyzxrvrfhui">旋转方式(eg:液压)</string>
+    <string name="zoyzxrvrjndu">旋转角度</string>
+    <string name="uvbgxkhc">水泵规格</string>
+    <string name="wdxkiicuycqq">外形尺寸要求</string>
+    <string name="uhxxqiui">起始角度</string>
+    <string name="uhxxvsvi">终止角度</string>
+    <string name="zoyzqiui">起始角度</string>
+    <string name="zoyzvsvi">终止角度</string>
+    <string name="fujmlpbn">附件</string>
+    <string name="submit">确定</string>
+    <string name="zids">自动</string>
+    <string name="dmds">点动</string>
+    <string name="vibcjbdcqiuijm">质保金到期时间</string>
+    <string name="vibcjbdcqiuijm_short">到期时间</string>
+
+    <string name="qita">备注</string>
+
 </resources>

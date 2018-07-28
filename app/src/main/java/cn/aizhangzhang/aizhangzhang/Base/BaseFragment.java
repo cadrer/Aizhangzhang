@@ -15,6 +15,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         mRootView = inflater.inflate(attachLayoutRes(), container, false);
+        System.out.println("response12-base " );  //12
         initViews();
         return mRootView;
     }
